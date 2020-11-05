@@ -2,6 +2,8 @@
 #define DICEWINDOW_H
 
 #include <QWidget>
+#include <QRandomGenerator>
+#include <QMessageBox>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class DiceWindow; }
@@ -15,7 +17,12 @@ public:
     DiceWindow(QWidget *parent = nullptr);
     ~DiceWindow();
 
+private slots:
+    void on_rollButton_clicked();
+
 private:
     Ui::DiceWindow *ui;
+
+    bool validateInput();
 };
 #endif // DICEWINDOW_H
