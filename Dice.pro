@@ -9,10 +9,12 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    dice.cpp \
     main.cpp \
     dicewindow.cpp
 
 HEADERS += \
+    dice.h \
     dicewindow.h
 
 FORMS += \
